@@ -1,24 +1,19 @@
 import React from 'react';
 import './App.css';
-import Home from './pages/Home';
-import Deals from './pages/Deals';
+import { Home } from './pages/Home';
+import { Discover } from './pages/Discover';
+import {  NavBar } from './components/NavBar';
 
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 
 function App() {
   return (
-    <Router>
-    <div>
-    <nav>
-    <ul>
-      <li><Link to="/">Home</Link></li>
-      <li><Link to="/deals">Deals</Link></li>
-    </ul>
-    </nav>
-
+  <Router>
+    <div className="container">
+    <NavBar />
   <Switch>
-    <Route path="/deals"><Deals /></Route>
+    <Route path="/deals"><Discover /></Route>
     <Route path="/"><Home /></Route>
   </Switch>
     </div>
