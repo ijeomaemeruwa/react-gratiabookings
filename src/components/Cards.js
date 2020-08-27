@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CardDeck from 'react-bootstrap/CardDeck';
 import Card from 'react-bootstrap/Card';
+import Naira from 'react-naira';
 
 export class Cards extends Component {
     render() {
@@ -9,10 +10,10 @@ export class Cards extends Component {
 <CardDeck>
 
 <Card>
-<Card.Img variant="top" src="./images/dubai2.jpg" />
+<Card.Img variant="top" src="" />
 <Card.Body>
     <Card.Title>Dubai</Card.Title>
-    <h3><strong><span>&#8358</span>405,075</strong></h3>
+    <h3><Naira>405,075</Naira></h3>
     <Card.Text>
     <small>+ Visa</small>
     <small>+ Hotel(7 Nights)</small>
@@ -22,10 +23,10 @@ export class Cards extends Component {
 </Card>
 
 <Card>
-<Card.Img variant="top" src="./images/dubai2.jpg" />
+<Card.Img variant="top" src="" />
 <Card.Body>
     <Card.Title>Dubai</Card.Title>
-    <h3><strong><span>&#8358</span>405,075</strong></h3>
+    <h3><Naira>405,075</Naira></h3>
     <Card.Text>
     <small>+ Visa</small>
     <small>+ Hotel(7 Nights)</small>
@@ -35,10 +36,10 @@ export class Cards extends Component {
 </Card>
 
 <Card>
-<Card.Img variant="top" src="./images/dubai2.jpg" />
+<Card.Img variant="top" src="" />
 <Card.Body>
     <Card.Title>Dubai</Card.Title>
-    <h3><strong><span>&#8358</span>405,075</strong></h3>
+    <h3><Naira>405,075</Naira></h3>
     <Card.Text>
     <small>+ Visa</small>
     <small>+ Hotel(7 Nights)</small>
