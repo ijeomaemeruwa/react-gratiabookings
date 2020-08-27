@@ -3,6 +3,7 @@ import { Hero }  from '../components/Hero';
 import { Cards } from '../components/Cards';
 import { Services } from '../components/Services';
 import { Contact } from '../components/Contact';
+import { Footer } from '../components/Footer';
 
 export class Home extends Component{
     render() {
@@ -12,6 +13,7 @@ export class Home extends Component{
     <Cards />
     <Services />
     <Contact />
+    <Footer />
    </div>
 )
 }

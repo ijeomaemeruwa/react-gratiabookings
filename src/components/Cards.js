@@ -7,10 +7,13 @@ export class Cards extends Component {
     render() {
     return (
 <div>
+<div class="padding text-center">
+    <h2>FEATURED DEALS</h2>
+</div>
+
 <CardDeck>
-
 <Card>
-<Card.Img variant="top" src="" />
+<Card.Img variant="top" src="../images/dubai2.jpg" />
 <Card.Body>
     <Card.Title>Dubai</Card.Title>
     <h3><Naira>405,075</Naira></h3>
@@ -23,9 +26,9 @@ export class Cards extends Component {
 </Card>
 
 <Card>
-<Card.Img variant="top" src="" />
+<Card.Img variant="top" src="../images/singapore.jpg" />
 <Card.Body>
-    <Card.Title>Dubai</Card.Title>
+    <Card.Title>Singapore</Card.Title>
     <h3><Naira>405,075</Naira></h3>
     <Card.Text>
     <small>+ Visa</small>
@@ -36,9 +39,9 @@ export class Cards extends Component {
 </Card>
 
 <Card>
-<Card.Img variant="top" src="" />
+<Card.Img variant="top" src="../images/seychelles.jpg" />
 <Card.Body>
-    <Card.Title>Dubai</Card.Title>
+    <Card.Title>Seychelles</Card.Title>
     <h3><Naira>405,075</Naira></h3>
     <Card.Text>
     <small>+ Visa</small>

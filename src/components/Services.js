@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import Card from 'react-bootstrap/Card';
+import CardDeck from 'react-bootstrap/CardDeck';
 
 export class Services extends Component {
 render() {
 return (
 <div>
+
+<div className="container-fluid my-3 mx-3">
 <div className="col-lg-12 text-center">
     <h2>SERVICES</h2>
     <div className="col-lg-12 text-center">
@@ -12,39 +15,33 @@ return (
     </div>
 </div>
 
-<div>
+<div className="row text-center">
+<CardDeck className="mx-auto">
 <Card style={{ width: '18rem', height: '16rem', }}>
 <Card.Body>
-    <Card.Title>Card Title</Card.Title>
-    <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+    <Card.Title>Dubai</Card.Title> 
     <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
     </Card.Text>
 </Card.Body>
 </Card>
 
 <Card style={{ width: '18rem', height: '16rem', }}>
 <Card.Body>
-    <Card.Title>Card Title</Card.Title>
-    <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+    <Card.Title>Dubai</Card.Title> 
     <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
     </Card.Text>
 </Card.Body>
 </Card>
 
 <Card style={{ width: '18rem', height: '16rem', }}>
 <Card.Body>
-    <Card.Title>Card Title</Card.Title>
-    <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+    <Card.Title>Dubai</Card.Title> 
     <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
     </Card.Text>
 </Card.Body>
 </Card>
+</CardDeck>
+</div>
 </div>
 
 <div className="partner-content text-center padding my-3">
