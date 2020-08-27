@@ -1,23 +1,15 @@
 import React from 'react';
 import './App.css';
-import { Home } from './pages/Home';
-import { Discover } from './pages/Discover';
-import {  NavBar } from './components/NavBar';
-
-import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import {  Navigation } from './components/Navigation';
 
 
-function App() {
+
+const App = () => {
   return (
-  <Router>
-    <div className="container">
-    <NavBar />
-  <Switch>
-    <Route path="/deals"><Discover /></Route>
-    <Route path="/"><Home /></Route>
-  </Switch>
-    </div>
-  </Router>
+ <div>
+   <Navigation />
+ </div>
+  
 );
 }
 
