@@ -7,11 +7,11 @@ render() {
 return (
 <div>
 
-<div className="container-fluid my-3 mx-3">
+<div className="container-fluid my-3 mx-2">
 <div className="col-lg-12 text-center">
     <h2>SERVICES</h2>
     <div className="col-lg-12 text-center">
-    <p>Book Now with Gratia Bookings</p>
+    <p>Book Now with Gratia Bookings.</p>
     </div>
 </div>
 

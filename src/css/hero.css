@@ -1,7 +1,7 @@
 .hero-section {
     height: 500px;
     width: 100%;
-    background: url('../images/main-hero.jpg')  no-repeat center/cover;
+    background: url('../images/hero-greece-img.jpg')  no-repeat center/cover;
     position: relative;
 }
 
@@ -29,19 +29,17 @@
     font-size: 1.5rem;
 }
 
-.btn-1 {
+.btn {
     padding: 10px 15px;
     outline: none;
-    border: 1px solid #fefffe;
     border-radius: 5px;
     margin-left: 5px;
     color: #fefffe !important;
-    background: transparent;
     letter-spacing: 1px;
     width: 200px;
 }
 
-.btn-1:hover {
+.btn:hover {
     background: var(--primary-color);
     color: #fefffe;
 }
