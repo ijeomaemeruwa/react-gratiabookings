@@ -35,7 +35,7 @@ export class Contact extends Component {
   </Form.Group>
   <Form.Group controlId="exampleForm.ControlTextarea1">
     <Form.Label>Message/Enquiry</Form.Label>
-    <Form.Control as="textarea" rows="3" placeholder="Send us a message or enquiry.." />
+    <Form.Control as="textarea" rows="3" placeholder="Enter message.." />
   </Form.Group>
   <Button variant="primary" type="submit">
     Submit

@@ -7,7 +7,7 @@ render() {
 return (
 <div>
 
-<div className="container-fluid my-3 mx-2">
+<div className="container-fluid padding" style={{ background: '#f3f6f8' }}>
 <div className="col-lg-12 text-center">
     <h2>SERVICES</h2>
     <div className="col-lg-12 text-center">
@@ -16,7 +16,7 @@ return (
 </div>
 
 <div className="row text-center">
-<CardDeck className="mx-auto">
+<CardDeck className="mx-auto" >
 <Card style={{ width: '18rem', height: '16rem', }}>
 <Card.Body>
     <Card.Title>Dubai</Card.Title> 
@@ -33,7 +33,7 @@ return (
 </Card.Body>
 </Card>
 
-<Card style={{ width: '18rem', height: '16rem', }}>
+<Card style={{ width: '18rem', height: '16rem'}}>
 <Card.Body>
     <Card.Title>Dubai</Card.Title> 
     <Card.Text>
@@ -42,11 +42,6 @@ return (
 </Card>
 </CardDeck>
 </div>
-</div>
-
-<div className="partner-content text-center padding my-3">
-<h3>Our Partners</h3>
-<img lazy-img="https://wakanow-images.azureedge.net/Images/logo.png" src="https://wakanow-images.azureedge.net/Images/logo.png" className="img img-responsive" alt="Wakanow Logo"></img>
 </div>
 
 </div>
