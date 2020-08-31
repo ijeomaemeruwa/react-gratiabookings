@@ -8,14 +8,14 @@ export class Discover extends Component {
     render() {
     return (
     <div>
-    <h2>LATEST DEALS AND PACKAGES</h2>  
+    <h3>LATEST DEALS AND PACKAGES</h3>  
     
 <CardDeck className="m-5">
 <Card>
-<Card.Img variant="top" src="../src/images/dubai2.jpg" />
+<Card.Img variant="top" src="../images/dubai2.jpg" />
 <Card.Body>
     <Card.Title>Dubai</Card.Title>
-    <h3>405,075</h3>
+    <h4>405,075</h4>
     <Card.Text>
     <small>+ Visa</small>
     <small>+ Hotel(7 Nights)</small>
@@ -28,7 +28,7 @@ export class Discover extends Component {
 <Card.Img variant="top" src="../images/singapore.jpg" />
 <Card.Body>
     <Card.Title>Singapore</Card.Title>
-    <h3>405,075</h3>
+    <h4>405,075</h4>
     <Card.Text>
     <small>+ Visa</small>
     <small>+ Hotel(7 Nights)</small>
@@ -38,10 +38,10 @@ export class Discover extends Component {
 </Card>
 
 <Card>
-<Card.Img variant="top" src="../images/seychelles.jpg" />
+<Card.Img variant="top" src="../images/greece.jpg" />
 <Card.Body>
-    <Card.Title>Seychelles</Card.Title>
-    <h3>405,075</h3>
+    <Card.Title>Greece</Card.Title>
+    <h4>405,075</h4>
     <Card.Text>
     <small>+ Visa</small>
     <small>+ Hotel(7 Nights)</small>
@@ -56,8 +56,8 @@ export class Discover extends Component {
 <Card>
 <Card.Img variant="top" src="../images/dubai2.jpg" />
 <Card.Body>
-    <Card.Title>Dubai</Card.Title>
-    <h3>405,075</h3>
+    <Card.Title>Fiji</Card.Title>
+    <h4>405,075</h4>
     <Card.Text>
     <small>+ Visa</small>
     <small>+ Hotel(7 Nights)</small>
@@ -69,8 +69,8 @@ export class Discover extends Component {
 <Card>
 <Card.Img variant="top" src="../images/singapore.jpg" />
 <Card.Body>
-    <Card.Title>Singapore</Card.Title>
-    <h3>405,075</h3>
+    <Card.Title>Morocco</Card.Title>
+    <h4>405,075</h4>
     <Card.Text>
     <small>+ Visa</small>
     <small>+ Hotel(7 Nights)</small>
@@ -83,7 +83,7 @@ export class Discover extends Component {
 <Card.Img variant="top" src="../images/singapore2.jpg" />
 <Card.Body>
     <Card.Title>Seychelles</Card.Title>
-    <h3>405,075</h3>
+    <h4>405,075</h4>
     <Card.Text>
     <small>+ Visa</small>
     <small>+ Hotel(7 Nights)</small>

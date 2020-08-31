@@ -8,7 +8,7 @@ export class Cards extends Component {
     render() {
     return (
 <div>
-<div class="padding text-center mt-5">
+<div class="padding text-center mt-5 mb-3">
     <h2>FEATURED DEALS</h2>
 </div>
 
@@ -17,7 +17,7 @@ export class Cards extends Component {
 <Card.Img variant="top" src="../images/dubai2.jpg" />
 <Card.Body>
     <Card.Title>Dubai</Card.Title>
-    <h3>405,075</h3>
+    <h4>405,075</h4>
     <Card.Text>
     <small>+ Visa</small>
     <small>+ Hotel(7 Nights)</small>
@@ -30,7 +30,7 @@ export class Cards extends Component {
 <Card.Img variant="top" src="../images/singapore.jpg" />
 <Card.Body>
     <Card.Title>Singapore</Card.Title>
-    <h3>405,075</h3>
+    <h4>405,075</h4>
     <Card.Text>
     <small>+ Visa</small>
     <small>+ Hotel(7 Nights)</small>
@@ -40,10 +40,10 @@ export class Cards extends Component {
 </Card>
 
 <Card>
-<Card.Img variant="top" src="../images/seychelles.jpg" />
+<Card.Img variant="top" src="../images/greece.jpg" />
 <Card.Body>
-    <Card.Title>Seychelles</Card.Title>
-    <h3>405,075</h3>
+    <Card.Title>Greece</Card.Title>
+    <h4>405,075</h4>
     <Card.Text>
     <small>+ Visa</small>
     <small>+ Hotel(7 Nights)</small>
@@ -53,7 +53,7 @@ export class Cards extends Component {
 </Card>
 </CardDeck>
 
-<Button className="card-btn" variant="outline-primary" type="submit">
+<Button className="mb-5 col-md-6" variant="primary" type="submit">
     View More
 </Button>
 </div>

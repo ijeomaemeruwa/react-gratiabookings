@@ -11,7 +11,7 @@ export class Navigation extends Component {
     render() {
     return (
       <div>
-      <div className="row">
+      <div className="row menu">
       <div className="col-md-12">
         <Router>
         <Navbar bg="light" variant="light" expand="lg" sticky="top">

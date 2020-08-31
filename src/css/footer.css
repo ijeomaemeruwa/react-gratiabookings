@@ -3,11 +3,11 @@
     color: #f3f6f8;
 }
 
-h3 {
+h4 {
     padding: 15px;
 }
 
-h4 {
+h6 {
     color: #d5d5d5;
 }
 
@@ -42,4 +42,40 @@ h4 {
 
 .social-container img {
     color: #d5d5d5;
+}
+
+@media screen and (max-width: 480px) {
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+
+    .partners-section {
+        margin-bottom: 15px;
+    }
+
+    .footer-contact {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+
+    .partners-section {
+        margin-bottom: 15px;
+    }
+
+    .footer-contact {
+        margin-bottom: 15px;
+    } 
 }

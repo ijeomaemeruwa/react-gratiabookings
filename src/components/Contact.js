@@ -15,29 +15,25 @@ export class Contact extends Component {
 <p>+ Fast and Secure Delivery</p><br />
 </div>
 
-<Form className="form-section col-md-5 col-sm-10 text-center padding mt-3">
+<Form className="form-section col-md-5 col-sm-10 text-center mt-3">
     <h3>Get In Touch</h3>
     <p>Contact us for your enquiries about deals and cargo shipping!</p>
   <Form.Group controlId="exampleForm.ControlInput1">
-    <Form.Label>Full Name</Form.Label>
     <Form.Control type="text" placeholder="Full Name" />
-  </Form.Group>
+  </Form.Group><br />
   <Form.Group controlId="exampleForm.ControlInput1">
-    <Form.Label>Phone Number</Form.Label>
     <Form.Control type="text" placeholder="Phone Number" />
-  </Form.Group>
+  </Form.Group><br />
   <Form.Group controlId="formGroupEmail">
-    <Form.Label>Email address</Form.Label>
     <Form.Control type="email" placeholder="Enter email" />
     <Form.Text className="text-muted">
       We'll never share your email with anyone else.
     </Form.Text>
-  </Form.Group>
+  </Form.Group><br />
   <Form.Group controlId="exampleForm.ControlTextarea1">
-    <Form.Label>Message/Enquiry</Form.Label>
-    <Form.Control as="textarea" rows="3" placeholder="Enter message.." />
-  </Form.Group>
-  <Button variant="primary" type="submit">
+    <Form.Control as="textarea" rows="3" placeholder="Enter message/enquiry" />
+  </Form.Group><br />
+  <Button variant="primary" type="submit" className="mb-3">
     Submit
   </Button>
 </Form>
