@@ -14,23 +14,30 @@ return (
     </div>
 
     <div className="cargo-services">
-    <h3>See what we can do for you and your business</h3>
+    <h3 className="text-center my-5">See what we can do for you and your business</h3>
     
-    <div>
-    <p>Fast and Efficient staff</p>
-    <Image src="../images/customer-service.jpg" fluid />
+    <div className="row padding">
+    <h4 className="col-md-6 col-sm-12">
+    <strong>Excellent Customer Support</strong><br />
+    We take pride in ensuring customers are satisfied with our operations by 
+    delivering goods and packages on fast and on time.
+    </h4>
+    <Image className="col-md-6 col-sm-12 cargo-img" src={require('../images/service.jpg')} fluid />
     </div>
 
-    <div>
-    <Image src="../images/customer-service.jpg" fluid />
-    <p>Fast and Efficient staff</p>
+    <div className="row padding">
+    <Image className="col-md-6 col-sm-12 cargo-img" src={require('../images/parcel.jpg')} fluid />
+    <h4 className="col-md-6 col-sm-12">
+    <strong>Local and International Delivery</strong><br />
+    We offer services that include door to door delivery both locally
+    and internationally.
+    </h4>
     </div>
     </div>
 
-    <div>
+    <div className="text-center my-5">
     <h4>Want to talk? <br />
-    Please call us: <strong>+234 814 750 5956</strong></h4>
-    <p></p> 
+    Please call us: <strong>+234 814 750 5956</strong></h4> 
     </div>
 
     <Footer />

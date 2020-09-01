@@ -3,7 +3,6 @@ import CardDeck from 'react-bootstrap/CardDeck';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 
-
 export class Cards extends Component {
     render() {
     return (
@@ -14,7 +13,7 @@ export class Cards extends Component {
 
 <CardDeck className="m-5">
 <Card>
-<Card.Img variant="top" src="../images/dubai2.jpg" />
+<Card.Img variant="top" src={require('../images/dubai2.jpg')} fluid />
 <Card.Body>
     <Card.Title>Dubai</Card.Title>
     <h4>405,075</h4>
@@ -27,7 +26,7 @@ export class Cards extends Component {
 </Card>
 
 <Card>
-<Card.Img variant="top" src="../images/singapore.jpg" />
+<Card.Img variant="top" src={require('../images/singapore2.jpg')} fluid />
 <Card.Body>
     <Card.Title>Singapore</Card.Title>
     <h4>405,075</h4>
@@ -40,9 +39,9 @@ export class Cards extends Component {
 </Card>
 
 <Card>
-<Card.Img variant="top" src="../images/greece.jpg" />
+<Card.Img variant="top" src={require('../images/fiji.jpg')} fluid />
 <Card.Body>
-    <Card.Title>Greece</Card.Title>
+    <Card.Title>Fiji</Card.Title>
     <h4>405,075</h4>
     <Card.Text>
     <small>+ Visa</small>

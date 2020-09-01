@@ -12,7 +12,7 @@ export class Discover extends Component {
     
 <CardDeck className="m-5">
 <Card>
-<Card.Img variant="top" src="../images/dubai2.jpg" />
+<Card.Img variant="top" src={require('../images/dubai-city.jpg')} fluid />
 <Card.Body>
     <Card.Title>Dubai</Card.Title>
     <h4>405,075</h4>
@@ -25,9 +25,9 @@ export class Discover extends Component {
 </Card>
 
 <Card>
-<Card.Img variant="top" src="../images/singapore.jpg" />
+<Card.Img variant="top" src={require('../images/morocco.jpg')} />
 <Card.Body>
-    <Card.Title>Singapore</Card.Title>
+    <Card.Title>Morocco</Card.Title>
     <h4>405,075</h4>
     <Card.Text>
     <small>+ Visa</small>
@@ -38,7 +38,7 @@ export class Discover extends Component {
 </Card>
 
 <Card>
-<Card.Img variant="top" src="../images/greece.jpg" />
+<Card.Img variant="top" src={require('../images/greece.jpg')} />
 <Card.Body>
     <Card.Title>Greece</Card.Title>
     <h4>405,075</h4>
@@ -54,7 +54,7 @@ export class Discover extends Component {
 
 <CardDeck className="m-5">
 <Card>
-<Card.Img variant="top" src="../images/dubai2.jpg" />
+<Card.Img variant="top" src={require('../images/fiji.jpg')} fluid />
 <Card.Body>
     <Card.Title>Fiji</Card.Title>
     <h4>405,075</h4>
@@ -67,9 +67,9 @@ export class Discover extends Component {
 </Card>
 
 <Card>
-<Card.Img variant="top" src="../images/singapore.jpg" />
+<Card.Img variant="top" src={require('../images/singapore2.jpg')} fluid />
 <Card.Body>
-    <Card.Title>Morocco</Card.Title>
+    <Card.Title>Singapore</Card.Title>
     <h4>405,075</h4>
     <Card.Text>
     <small>+ Visa</small>
@@ -80,7 +80,7 @@ export class Discover extends Component {
 </Card>
 
 <Card>
-<Card.Img variant="top" src="../images/singapore2.jpg" />
+<Card.Img variant="top" src={require('../images/seychelles.jpg')} />
 <Card.Body>
     <Card.Title>Seychelles</Card.Title>
     <h4>405,075</h4>
