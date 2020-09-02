@@ -25,6 +25,7 @@ return (
   data-netlify="true"
   onSubmit="submit"
 >
+<input type="hidden" name="form" value="gb-contact" />
     <h3>Get In Touch</h3>
     <p>Contact us for your travel enquiries, bookings and cargo services.</p>
   <Form.Group controlId="exampleForm.ControlInput1">
