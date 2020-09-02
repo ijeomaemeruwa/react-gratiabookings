@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import '../css/contact.css';
-
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 
 export class Contact extends Component {
  
-
 render() {
- 
 
 return (
 
@@ -19,7 +18,30 @@ return (
 <p>+ Fast and Secure Delivery</p><br />
 </div>
 
+<Form 
+  className="padding container col-md-5 col-sm-10 text-center"
+  name="gb-contact"
+  method="POST"
+  data-netlify="true"
+  onSubmit="submit"
+>
+    <h3>Get In Touch</h3>
+    <p>Contact us for your travel enquiries, bookings and cargo services.</p>
+  <Form.Group controlId="exampleForm.ControlInput1">
+    <Form.Control type="text" placeholder="FullName" />
+  </Form.Group><br />
+  <Form.Group controlId="exampleForm.ControlInput1">
+    <Form.Control type="text" placeholder="Phone No" />
+  </Form.Group><br />
+  <Form.Group controlId="exampleForm.ControlInput1">
+    <Form.Control type="email" placeholder="Enter valid email" />
+  </Form.Group><br />
+  <Form.Group controlId="exampleForm.ControlTextarea1">
+    <Form.Control as="textarea" rows="3" placeholder="Enter message or enquiry" />
+  </Form.Group><br />
 
+  <Button variant="primary" type="submit" className="mb-3">Send Message</Button>
+</Form>
 </div>
 </div>
 );
