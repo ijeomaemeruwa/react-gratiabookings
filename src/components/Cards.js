@@ -52,7 +52,7 @@ export class Cards extends Component {
 </Card>
 </CardDeck>
 
-<Button className="mb-5 col-md-6" variant="primary" type="submit">
+<Button className="mb-3 col-md-6" variant="primary" type="submit">
     View More
 </Button>
 </div>
