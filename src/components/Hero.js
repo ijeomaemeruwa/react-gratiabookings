@@ -15,7 +15,7 @@ export class Hero extends Component {
         on flight and hotel reservations,<br />
         both local and international!!
         </p> 
-        <Button variant="primary">DISCOVER DEALS</Button>{' '}
+        <Button className="hero-button">DISCOVER DEALS</Button>
         </div>
         </div>
         </div>
@@ -27,7 +27,6 @@ export class Hero extends Component {
         processing cargo to your desired destination all at a comfortable price.
         </p>
         </div>
-
         </div>
         )
     }

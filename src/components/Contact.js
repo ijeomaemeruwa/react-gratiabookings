@@ -20,33 +20,37 @@ return (
 
 <Form 
   className="padding container col-md-5 col-sm-10 text-center"
-  name="contact"
+  name="gratiabookings-contact"
   method="POST"
   data-netlify="true"
   data-netlify-recaptcha="true"
   onSubmit="submit"
 >
-<input type="hidden" name="form" value="contact" />
+<input type="hidden" name="form" value="gratiabookings-contact" />
+
     <h3>Get In Touch</h3>
     <p>Contact us for your travel enquiries, bookings and cargo services.</p>
   <Form.Group controlId="exampleForm.ControlInput1">
-    <Form.Control type="text" placeholder="FullName" name="full-name" />
+    <Form.Control type="text" placeholder="FullName" name="full-name" required />
   </Form.Group><br />
   <Form.Group controlId="exampleForm.ControlInput1">
-    <Form.Control type="text" placeholder="Phone No" name="phone" />
+    <Form.Control type="text" placeholder="Phone No" name="phone" required/>
   </Form.Group><br />
   <Form.Group controlId="exampleForm.ControlInput1">
-    <Form.Control type="email" placeholder="Enter valid email" name="email" />
+    <Form.Control type="email" placeholder="Enter valid email" name="email" required/>
   </Form.Group><br />
   <Form.Group controlId="exampleForm.ControlTextarea1">
     <Form.Control 
+    required
     as="textarea" 
     rows="3" 
     placeholder="Enter message or enquiry"
     name="message"
     />
   </Form.Group><br />
+
   <div data-netlify-recaptcha="true"></div>
+
   <Button variant="primary" type="submit" className="mb-3">Send Message</Button>
 </Form>
 </div>

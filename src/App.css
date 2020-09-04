@@ -4,7 +4,7 @@
     --primary-color: #007afb; 
     --accent-color: #f7a92d;
     --text-color: #121212;
-    --overlay-color: rgba(32, 32, 32, 0.7);
+    --overlay-color: rgba(3, 3, 3, 0.7);
 }
 
 * {
@@ -24,7 +24,6 @@ h2 {
     letter-spacing: 1px;
 }
 
-/*
 .overlay-color {
     position: absolute;
     top: 0;
@@ -34,4 +33,3 @@ h2 {
     background-color: var(--overlay-color);
 }
 
-*/

@@ -9,11 +9,11 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     margin: auto;
-    padding: 5rem;
+    padding: 5rem 1rem;
     max-width: 100%;
     line-height: 2em;
     color: #fefffe;
@@ -29,19 +29,17 @@
     font-size: 1.5rem;
 }
 
-.btn {
-    padding: 10px 15px;
-    outline: none;
-    border-radius: 5px;
-    margin-left: 5px;
-    color: #fefffe !important;
-    letter-spacing: 1px;
-    width: 200px;
+.hero-button {
+   padding: 10px;
+   width: 200px;
+   border: 1px solid #fefffe !important;
+   color: #fefffe;
+   background: transparent;
 }
 
-.btn:hover {
-    background: var(--primary-color);
-    color: #fefffe;
+.hero-button:hover {
+   border: none !important;
+   background: var(--primary-color) !important;
 }
 
 .about-section {

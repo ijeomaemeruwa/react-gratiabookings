@@ -3,9 +3,11 @@ import { Home } from '../pages/Home';
 import { Discover } from '../pages/Discover';
 import { Cargo } from '../pages/Cargo';
 import { Navbar, Nav, Button } from 'react-bootstrap';
-import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
 import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
+import { Contact } from './Contact';
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+
 
 export class Navigation extends Component {
     render() {
@@ -32,12 +34,12 @@ export class Navigation extends Component {
         <Route exact path="/"><Home /></Route>
         <Route exact path="/discover"><Discover /></Route>
         <Route exact path="/cargo"><Cargo /></Route>
+        <Route exact path="./Contact.js"><Contact /></Route>
         </Switch>
         </Router>
       </div>
       </div>
-      </div>
-        
+      </div>        
 )
 }
 }
