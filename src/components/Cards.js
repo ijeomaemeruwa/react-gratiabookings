@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import CardDeck from 'react-bootstrap/CardDeck';
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
+/* import Button from 'react-bootstrap/Button'; */
 
 export class Cards extends Component {
     render() {
@@ -16,7 +16,7 @@ export class Cards extends Component {
 <Card.Img variant="top" src={require('../images/dubai2.jpg')} fluid />
 <Card.Body>
     <Card.Title>Dubai</Card.Title>
-    <h4>405,075</h4>
+    <h4><span>&#8358;</span>405,075</h4>
     <Card.Text>
     <small>+ Visa</small>
     <small>+ Hotel(7 Nights)</small>
@@ -29,7 +29,7 @@ export class Cards extends Component {
 <Card.Img variant="top" src={require('../images/singapore2.jpg')} fluid />
 <Card.Body>
     <Card.Title>Singapore</Card.Title>
-    <h4>405,075</h4>
+    <h4><span>&#8358;</span>405,075</h4>
     <Card.Text>
     <small>+ Visa</small>
     <small>+ Hotel(7 Nights)</small>
@@ -42,7 +42,7 @@ export class Cards extends Component {
 <Card.Img variant="top" src={require('../images/fiji.jpg')} fluid />
 <Card.Body>
     <Card.Title>Fiji</Card.Title>
-    <h4>405,075</h4>
+    <h4><span>&#8358;</span>405,075</h4>
     <Card.Text>
     <small>+ Visa</small>
     <small>+ Hotel(7 Nights)</small>
@@ -52,9 +52,7 @@ export class Cards extends Component {
 </Card>
 </CardDeck>
 
-<Button className="mb-3 card-btn" variant="primary" type="submit">
-    View More
-</Button>
+
 </div>
     )
 }

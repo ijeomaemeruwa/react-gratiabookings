@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import '../css/cargo.css';
 import { Footer } from '../components/Footer';
-import Image from 'react-bootstrap/Image';
 
 export class Cargo extends Component {
 render() {
@@ -16,18 +15,24 @@ return (
     <div className="cargo-services">
     <h3 className="text-center my-5">See what we can do for you and your business</h3>
     
-    <div className="row padding">
-    <h4 className="col-md-6 col-sm-12">
+    <div className="row padding cargo-info">
+    <h4 className="col-md-6 col-sm-12 padding">
     <strong>Excellent Customer Support</strong><br />
     We take pride in ensuring customers are satisfied with our operations by 
     delivering goods and packages on fast and on time.
     </h4>
-    <Image className="col-md-6 col-sm-12 cargo-img" src={require('../images/service.jpg')} fluid />
+    <img className="col-md-6 col-sm-12 cargo-img" 
+         src={require('../images/service.jpg')} fluid 
+         alt="service-logo">
+    </img>
     </div>
 
     <div className="row padding">
-    <Image className="col-md-6 col-sm-12 cargo-img" src={require('../images/parcel.jpg')} fluid />
-    <h4 className="col-md-6 col-sm-12">
+    <img className="col-md-6 col-sm-12 cargo-img" 
+         src={require('../images/parcel.jpg')} fluid 
+         alt="parcel">
+    </img>
+    <h4 className="col-md-6 col-sm-1 padding">
     <strong>Local and International Delivery</strong><br />
     We offer services that include door to door delivery both locally
     and internationally.

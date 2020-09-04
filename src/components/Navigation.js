@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Home } from '../pages/Home';
 import { Discover } from '../pages/Discover';
 import { Cargo } from '../pages/Cargo';
-import { Navbar, Nav, Button } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
 import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
 import { Contact } from './Contact';
@@ -17,7 +17,9 @@ export class Navigation extends Component {
       <div className="col-md-12">
         <Router>
         <Navbar bg="light" variant="light" expand="lg" sticky="top">
-        <Navbar.Brand href="#home" className="logo">GRATIA BOOKINGS</Navbar.Brand>  
+        <Navbar.Brand href="#home" className="logo">
+          <img src={require('../images/logo.svg')} alt="logo"></img>
+          </Navbar.Brand>  
 
         <NavbarToggle aria-controls="basic-navbar-nav"></NavbarToggle> 
         <NavbarCollapse id="basic-navbar-nav">
@@ -25,7 +27,7 @@ export class Navigation extends Component {
                <Nav.Link href="/">Home</Nav.Link>
                <Nav.Link href="/discover">Discover</Nav.Link>
                <Nav.Link href="/cargo">Cargo</Nav.Link>
-               <Button type="submit">Contact Us</Button>
+               <Nav.Link href="/Contact">Contact Us</Nav.Link>
            </Nav>
         </NavbarCollapse>
         </Navbar>
@@ -34,7 +36,7 @@ export class Navigation extends Component {
         <Route exact path="/"><Home /></Route>
         <Route exact path="/discover"><Discover /></Route>
         <Route exact path="/cargo"><Cargo /></Route>
-        <Route exact path="./Contact.js"><Contact /></Route>
+        <Route exact path="/Contact" component={Contact} />
         </Switch>
         </Router>
       </div>

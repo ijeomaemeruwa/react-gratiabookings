@@ -41,6 +41,10 @@ span {
     padding: 15px;
 }
 
+.cargo-info img {
+    width: 300px;
+}
+
 .cargo-services .cargo-img {
     width: 200px;
 }
@@ -56,5 +60,10 @@ span {
     
     h4 {
         font-size: 1rem;
+    }
+
+    .cargo-services .cargo-img {
+        max-width: 100%;
+        align-items: center;
     }
 }

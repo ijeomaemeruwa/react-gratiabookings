@@ -33,3 +33,16 @@ h2 {
     background-color: var(--overlay-color);
 }
 
+/* custom styled general button */
+.custom-btn {
+    padding: 10px;
+    width: 200px;
+    border: none;
+    color: #fefffe;
+    background: var(--primary-color);
+}
+
+.custom-btn:hover {
+    color: #fefffe;
+    background: darkblue;
+}

@@ -12,7 +12,7 @@ return (
 <div className="col-lg-12 text-center">
     <h2>SERVICES</h2>
     <div className="col-lg-12 text-center">
-    <p>Book Now with Gratia Bookings.</p>
+    <p>We offer quality premium packages and services.</p>
     </div>
 </div>
 
@@ -20,7 +20,7 @@ return (
 <CardDeck className="mx-auto" >
 <Card style={{ width: '16rem', height: '16rem', }} className="cards">
 <Card.Body>
-    <Card.Title>FLIGHT BOOKINGS</Card.Title> 
+    <Card.Title className="mt-5">FLIGHT BOOKINGS</Card.Title> 
     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
    width="64" height="64"
    viewBox="0 0 172 172"
@@ -42,14 +42,14 @@ font-family="none" font-weight="none" font-size="none" text-anchor="none" style=
 -0.50391zM71.89063,43.50391l20.66016,5.03906l-11.08594,5.71094l-12.09375,-9.23828zM16.125,139.75v10.75h139.75v-10.75z">
 </path></g></g></svg>
     <Card.Text>
-
+    <small>Affordable packages you can't resist</small>
     </Card.Text>
 </Card.Body>
 </Card>
 
 <Card style={{ width: '16rem', height: '16rem', }} className="cards">
 <Card.Body>
-    <Card.Title>HOTEL RESERVATIONS</Card.Title> 
+    <Card.Title className="mt-5">HOTEL RESERVATIONS</Card.Title> 
     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
     width="64" height="64"
     viewBox="0 0 172 172"
@@ -65,13 +65,14 @@ font-family="none" font-weight="none" font-size="none" text-anchor="none" style=
     112.875v10.75h10.75v-10.75zM112.875,112.875v10.75h10.75v-10.75zM80.625,123.625h10.75v16.125h-10.75z">
     </path></g></g></svg>
     <Card.Text>
+    <small>Luxurious hotels and fine dining</small>
     </Card.Text>
 </Card.Body>
 </Card>
 
 <Card style={{ width: '16rem', height: '16rem'}} className="cards">
 <Card.Body>
-    <Card.Title>CARGO SHIPPING</Card.Title> 
+    <Card.Title className="mt-5">CARGO SHIPPING</Card.Title> 
     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
     width="64" height="64"
     viewBox="0 0 172 172"
@@ -88,7 +89,7 @@ font-family="none" font-weight="none" font-size="none" text-anchor="none" style=
     0 10.75,4.74512 10.75,10.75c0,6.00489 -4.74511,10.75 -10.75,10.75c-6.00488,0 -10.75,-4.74511 -10.75,-10.75c0,-6.00488 4.74512,-10.75 10.75,-10.75z">
     </path></g></g></svg>
     <Card.Text>
-
+     <small>Fast and secure delivery</small>
     </Card.Text>
 </Card.Body>
 </Card>

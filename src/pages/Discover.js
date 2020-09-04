@@ -15,7 +15,7 @@ export class Discover extends Component {
 <Card.Img variant="top" src={require('../images/dubai-city.jpg')} fluid />
 <Card.Body>
     <Card.Title>Dubai</Card.Title>
-    <h4>405,075</h4>
+    <h4><span>&#8358;</span>405,075</h4>
     <Card.Text>
     <small>+ Visa</small>
     <small>+ Hotel(7 Nights)</small>
@@ -28,7 +28,7 @@ export class Discover extends Component {
 <Card.Img variant="top" src={require('../images/morocco.jpg')} />
 <Card.Body>
     <Card.Title>Morocco</Card.Title>
-    <h4>405,075</h4>
+    <h4><span>&#8358;</span>405,075</h4>
     <Card.Text>
     <small>+ Visa</small>
     <small>+ Hotel(7 Nights)</small>
@@ -41,7 +41,7 @@ export class Discover extends Component {
 <Card.Img variant="top" src={require('../images/greece.jpg')} />
 <Card.Body>
     <Card.Title>Greece</Card.Title>
-    <h4>405,075</h4>
+    <h4><span>&#8358;</span>405,075</h4>
     <Card.Text>
     <small>+ Visa</small>
     <small>+ Hotel(7 Nights)</small>
@@ -57,7 +57,7 @@ export class Discover extends Component {
 <Card.Img variant="top" src={require('../images/fiji.jpg')} fluid />
 <Card.Body>
     <Card.Title>Fiji</Card.Title>
-    <h4>405,075</h4>
+    <h4><span>&#8358;</span>405,075</h4>
     <Card.Text>
     <small>+ Visa</small>
     <small>+ Hotel(7 Nights)</small>
@@ -70,7 +70,7 @@ export class Discover extends Component {
 <Card.Img variant="top" src={require('../images/singapore2.jpg')} fluid />
 <Card.Body>
     <Card.Title>Singapore</Card.Title>
-    <h4>405,075</h4>
+    <h4><span>&#8358;</span>405,075</h4>
     <Card.Text>
     <small>+ Visa</small>
     <small>+ Hotel(7 Nights)</small>
@@ -83,7 +83,7 @@ export class Discover extends Component {
 <Card.Img variant="top" src={require('../images/seychelles.jpg')} />
 <Card.Body>
     <Card.Title>Seychelles</Card.Title>
-    <h4>405,075</h4>
+    <h4><span>&#8358;</span>405,075</h4>
     <Card.Text>
     <small>+ Visa</small>
     <small>+ Hotel(7 Nights)</small>
