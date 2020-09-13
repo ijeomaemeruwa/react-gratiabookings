@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 
 export class ScrollToTop extends Component {
-    constructor(props) {
-      super(props);
-      this.state = {
-        visibleScroll: false
-      }
+    state = {
+      visibleScroll: false
     }
+  
 
     componentDidMount() {
       const scrollComponent = this;

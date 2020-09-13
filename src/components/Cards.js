@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import CardDeck from 'react-bootstrap/CardDeck';
 import Card from 'react-bootstrap/Card';
-/* import Button from 'react-bootstrap/Button'; */
+import { Link } from 'react-router-dom';
 
 export class Cards extends Component {
     render() {
@@ -10,6 +10,7 @@ export class Cards extends Component {
 <div class="padding text-center mt-5 mb-3">
     <h2>FEATURED DEALS</h2>
 </div>
+
 
 <CardDeck className="m-5">
 <Card>
@@ -52,8 +53,15 @@ export class Cards extends Component {
 </Card>
 </CardDeck>
 
+<div style={{ textAlign: "center", marginBottom: "2rem", fontSize: "1.5rem" }}>
+<Link to="/Discover">View More</Link>
+</div>
+
+<hr style={{ width: "70%", margin: "auto" }}/>
+<br />
+<br />
 
 </div>
-    )
+)
 }
 }

@@ -80,7 +80,7 @@ export class Discover extends Component {
 </Card>
 
 <Card>
-<Card.Img variant="top" src={require('../images/seychelles.jpg')} />
+<Card.Img variant="top" src={require('../images/hero-greece-img.jpg')} />
 <Card.Body>
     <Card.Title>Seychelles</Card.Title>
     <h4><span>&#8358;</span>405,075</h4>
