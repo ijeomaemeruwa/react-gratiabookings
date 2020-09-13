@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
-/* import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
-*/
-import '../css/footer.css';
-import { ScrollToTop } from '../ScrollToTop';
-import MailchimpSubscribe from "react-mailchimp-subscribe";
+import '../assets/css/footer.css';
+import { ScrollToTop } from './ScrollToTop';
+
 
 export class Footer extends Component {
 render() {
@@ -13,7 +10,7 @@ return (
 
 <footer className="footer-section">
 <div className="text-center mb-3 row">
-<span className="mt-2 col-md-4 col-sm-3"><img src={require('../images/logo2.svg')} alt="footer-logo"></img></span>
+<span className="mt-2 col-md-4 col-sm-3"><img src={require('../assets/images/logo2.svg')} alt="footer-logo"></img></span>
 <h4 className="col-md-4 col-sm-3">Book Now with Gratia Bookings!</h4>
 <span className="mt-3 mb-3 col-md-4 col-sm-3"><ScrollToTop /></span>
 </div>
@@ -34,7 +31,9 @@ return (
 
 <div className="newsletter-section col-md-4 col-sm-12 mt-3">
 <h5>Subscribe To Our NewsLetter</h5>
-<MailchimpSubscribe url={process.env.REACT_APP_MAILCHIMP_URL} />
+
+
+
 <small>Get news on travel packages, latest offers and promotions.</small>
 </div>
 </div>

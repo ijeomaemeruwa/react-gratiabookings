@@ -5,7 +5,7 @@ import { Cargo } from '../pages/Cargo';
 import { Navbar, Nav } from 'react-bootstrap';
 import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
 import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
-import { Contact } from './Contact';
+import { Contact } from '../components/Contact';
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 
@@ -18,7 +18,7 @@ export class Navigation extends Component {
         <Router>
         <Navbar bg="light" variant="light" expand="lg" sticky="top">
         <Navbar.Brand href="#home" className="logo">
-          <img src={require('../images/logo.svg')} alt="logo"></img>
+          <img src={require('../assets/images/logo.svg')} alt="logo"></img>
           </Navbar.Brand>  
 
         <NavbarToggle aria-controls="basic-navbar-nav"></NavbarToggle> 
@@ -27,7 +27,7 @@ export class Navigation extends Component {
                <Nav.Link href="/">Home</Nav.Link>
                <Nav.Link href="/discover">Discover</Nav.Link>
                <Nav.Link href="/cargo">Cargo</Nav.Link>
-               <Nav.Link href="/Contact">Contact Us</Nav.Link>
+               <Nav.Link href="/contact">Contact Us</Nav.Link>
            </Nav>
         </NavbarCollapse>
         </Navbar>

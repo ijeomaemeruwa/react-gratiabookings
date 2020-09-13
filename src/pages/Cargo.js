@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../css/cargo.css';
+import '../assets/css/cargo.css';
 import { Footer } from '../components/Footer';
 
 export class Cargo extends Component {
@@ -17,7 +17,7 @@ return (
 
     <div className="row padding">
     <img className="col-md-6 col-sm-12 cargo-img" 
-         src={require('../images/parcel.jpg')} fluid 
+         src={require('../assets/images/parcel.jpg')} fluid 
          alt="parcel">
     </img>
     <h4 className="col-md-6 col-sm-1 padding">

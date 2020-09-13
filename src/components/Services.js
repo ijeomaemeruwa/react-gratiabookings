@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Card from 'react-bootstrap/Card';
 import CardDeck from 'react-bootstrap/CardDeck';
-import '../css/services.css';
+import '../assets/css/services.css';
 
 export class Services extends Component {
 render() {

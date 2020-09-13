@@ -14,7 +14,7 @@ export class Cards extends Component {
 
 <CardDeck className="m-5">
 <Card>
-<Card.Img variant="top" src={require('../images/dubai2.jpg')} fluid />
+<Card.Img variant="top" src={require('../assets/images/dubai2.jpg')} fluid />
 <Card.Body>
     <Card.Title>Dubai</Card.Title>
     <h4><span>&#8358;</span>405,075</h4>
@@ -27,7 +27,7 @@ export class Cards extends Component {
 </Card>
 
 <Card>
-<Card.Img variant="top" src={require('../images/singapore2.jpg')} fluid />
+<Card.Img variant="top" src={require('../assets/images/singapore2.jpg')} fluid />
 <Card.Body>
     <Card.Title>Singapore</Card.Title>
     <h4><span>&#8358;</span>405,075</h4>
@@ -40,7 +40,7 @@ export class Cards extends Component {
 </Card>
 
 <Card>
-<Card.Img variant="top" src={require('../images/fiji.jpg')} fluid />
+<Card.Img variant="top" src={require('../assets/images/fiji.jpg')} fluid />
 <Card.Body>
     <Card.Title>Fiji</Card.Title>
     <h4><span>&#8358;</span>405,075</h4>
