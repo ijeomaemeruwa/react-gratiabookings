@@ -7,32 +7,32 @@ export class Footer extends Component {
 render() {
 return (
 <div>
-
 <footer className="footer-section">
-<div className="text-center mb-3 row">
+
+<div className="text-left mb-3 row">
 <span className="mt-2 col-md-4 col-sm-3"><img src={require('../assets/images/logo2.svg')} alt="footer-logo"></img></span>
-<h4 className="col-md-4 col-sm-3">Book Now with Gratia Bookings!</h4>
+<h4 className="col-md-4 col-sm-3">Book Now with us!</h4>
 <span className="mt-3 mb-3 col-md-4 col-sm-3"><ScrollToTop /></span>
 </div>
 
+
 <div className="footer-container row text-sm-center m-auto">
-<div className="partners-section col-md-4 col-sm-12 mt-3">
+
+<div className="partners-section col-md-4 col-sm-12 mt-3 text-left">
   <h6>In partnership with</h6>
   <img lazy-img="https://wakanow-images.azureedge.net/Images/logo.png" 
   src="https://wakanow-images.azureedge.net/Images/logo.png" className="img img-responsive" 
   alt="Wakanow Logo"></img> 
 </div>
 
-<div className="footer-contact col-md-4 col-sm-12 mt-3">
-<h6>Contact Us</h6>
+<div className="footer-contact col-md-4 col-sm-12 mt-2 text-left">
+<h5>Contact Us</h5>
 <p>Phone: +234 814 750 5956</p>
 <p>Email: gratiabookings@gmail.com</p>
 </div>
 
-<div className="newsletter-section col-md-4 col-sm-12 mt-3">
+<div className="newsletter-section col-md-4 col-sm-12 mt-3 text-left">
 <h5>Subscribe To Our NewsLetter</h5>
-
-
 
 <small>Get news on travel packages, latest offers and promotions.</small>
 </div>
@@ -40,17 +40,10 @@ return (
 
 </footer>
 
+
 <div className="social-media">
-<div className="col-md-4">
-<small>&copy; gratiabookings 2020</small>
-</div>
 
-<div className="col-md-4">
-<small>Terms and Conditions</small>
-</div>
-
-<div className="social-container col-md-4">
-
+<div className="social-container col-md-6 text-center">
 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
 width="32" height="32"
 viewBox="0 0 172 172"

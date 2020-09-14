@@ -1,44 +1,51 @@
 import React, { useState } from 'react';
-import { Axios } from '../firebase/firebaseConfig'
 import '../assets/css/contact.css';
+import axios from 'axios';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
 export const Contact = () => {
- const [ formData, setFormData ] = useState({
+ const [state, setState] = useState({
+   fullname: '',
+   phone: '',
+   email: '',
+   message: ''
+ });
 
- })
+ const [result, setResult] = useState(null);
 
- const updateInput = (e) => {
-   setFormData({
-     ...formData,
-     [e.target.fullName]: e.target.value,
-   })
+
+ const sendEmail = (e) => {
+   e.preventDefault()
+   axios
+  .post('/send', { ...state })
+  .then(response => {
+    setResult(response.data);
+    setState({ 
+      fullname: '', 
+      phone: '', 
+      email: '', 
+      message: '' 
+    });
+  })
+  .catch(() => {
+    setResult({ 
+      success: false, 
+      message: 'Something went wrong. Try again later'
+  });
+  });
  }
 
- const handleSubmit = (event) => {
-    event.preventDefault()
-
-    sendEmail()
-
-    setFormData({
-      fullName: '',
-      phone: '',
-      email: '',
-      message: ''
-    })
+ const inputChange = (event) => {
+   const { fullname, value } = event.target
+   setState({
+     ...state,
+     [ fullname ]: value
+   });
  }
 
- const sendEmail = () => {
-   Axios.post(
-    'https://us-central1-your-app-name.cloudfunctions.net/submit',
-    formData
-   ).then(res => {
-     console.log(res)
-   }).catch(err => {
-     console.log(err)
-   })
- }
+
+
 return (
 
 <div>
@@ -50,36 +57,54 @@ return (
 <p>+ Fast and Secure Delivery</p><br />
 </div>
 
-<Form className="padding container col-md-5 col-sm-10 text-center" onSubmit={handleSubmit}>
-    <h3>Get In Touch</h3>
+
+<Form 
+    className="padding container col-md-5 col-sm-10 text-center"
+    onSubmit={sendEmail}
+>
+    <h3 className="mt-3">Get In Touch</h3>
     <p>Contact us for your travel enquiries, bookings and cargo services.</p>
 
-  <Form.Group controlId="full-name">
+    {result && (
+     <p className={`${result.success ? 'success' : 'error'}`}>
+    {result.message}
+    </p>
+    )}
+
+  <Form.Group controlId="fullname">
     <Form.Control 
     type="text" placeholder="FullName" 
-    name="fullName" onChange={updateInput} 
-    value={ formData.fullName || '' } />
+    name="fullname" 
+    value={state.fullname}  
+    onChange={inputChange}
+   />
   </Form.Group><br />
 
   <Form.Group controlId="phone">
     <Form.Control 
     type="text" placeholder="Phone No" 
-    name="phone" onChange={updateInput} 
-    value={ formData.phone || '' } />
+    name="phone"
+    value={state.phone}  
+    onChange={inputChange}  
+    />
   </Form.Group><br />
 
   <Form.Group controlId="email">
     <Form.Control 
     type="email" placeholder="Enter valid email" 
-    name="email" onChange={updateInput} 
-    value={ formData.email || '' } />
+    name="email" 
+    value={state.email}  
+    onChange={inputChange} 
+    />
   </Form.Group><br />
 
   <Form.Group controlId="message">
     <Form.Control 
     as="textarea" rows="3" 
-    placeholder="Enter message or enquiry" name="message"
-    onChange={updateInput} value={ formData.message || '' } 
+    placeholder="Enter message or enquiry" 
+    name="message"
+    value={state.message}  
+    onChange={inputChange}
     />
   </Form.Group><br />
 

@@ -29,19 +29,17 @@ h6 {
 }
 
 .social-media {
-    background: #121212;
-    color: #d5d5d5;
+    background: #121212;  
+}
+
+.social-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     text-align: center;
     max-width: 100%;
     padding: 10px;
-}
-
-.social-container img {
-    color: #d5d5d5;
 }
 
 @media screen and (max-width: 480px) {
