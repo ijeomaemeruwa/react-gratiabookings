@@ -31,7 +31,7 @@ export class Navigation extends Component {
            </Nav>
         </NavbarCollapse>
         </Navbar>
-        <br />
+
         <Switch>
         <Route exact path="/"><Home /></Route>
         <Route exact path="/discover"><Discover /></Route>

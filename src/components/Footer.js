@@ -1,18 +1,22 @@
 import React, { Component } from 'react';
 import '../assets/css/footer.css';
 import { ScrollToTop } from './ScrollToTop';
+import MailchimpSubscribe from "react-mailchimp-subscribe"
 
 
 export class Footer extends Component {
 render() {
 return (
 <div>
-<footer className="footer-section">
+<footer className="footer-section m-auto">
 
-<div className="text-left mb-3 row">
-<span className="mt-2 col-md-4 col-sm-3"><img src={require('../assets/images/logo2.svg')} alt="footer-logo"></img></span>
+<div className="text-left ml-2 row footer-content">
+<span className="mt-2 col-md-4 col-sm-3 text-left">
+  <img src={require('../assets/images/logo2.svg')} alt="footer-logo"></img>
+</span>
 <h4 className="col-md-4 col-sm-3">Book Now with us!</h4>
-<span className="mt-3 mb-3 col-md-4 col-sm-3"><ScrollToTop /></span>
+<span className="my-2 col-md-4 col-sm-3"><ScrollToTop /></span>
+<hr style={{ width: "80%", margin: "auto" }}/>  
 </div>
 
 
@@ -32,17 +36,14 @@ return (
 </div>
 
 <div className="newsletter-section col-md-4 col-sm-12 mt-3 text-left">
-<h5>Subscribe To Our NewsLetter</h5>
-
+Subscribe
+<MailchimpSubscribe url={process.env.REACT_APP_MAILCHIMP_URL} className="newsletter "/>
 <small>Get news on travel packages, latest offers and promotions.</small>
 </div>
 </div>
-
 </footer>
 
-
 <div className="social-media">
-
 <div className="social-container col-md-6 text-center">
 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
 width="32" height="32"

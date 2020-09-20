@@ -44,13 +44,10 @@ export const Contact = () => {
    });
  }
 
-
-
 return (
-
 <div>
 <div className="row padding">
-<div className="cargo-section col-md-6 col-sm-12">
+<div className="cargo-section col-md-5 col-sm-12">
 <h2>We make your <br /> cargo transport simple </h2><br /> 
 <p>+ Secure Warehousing</p><br />
 <p>+ Fulfilled and Shipped Fast</p><br />
@@ -64,12 +61,6 @@ return (
 >
     <h3 className="mt-3">Get In Touch</h3>
     <p>Contact us for your travel enquiries, bookings and cargo services.</p>
-
-    {result && (
-     <p className={`${result.success ? 'success' : 'error'}`}>
-    {result.message}
-    </p>
-    )}
 
   <Form.Group controlId="fullname">
     <Form.Control 
@@ -110,6 +101,13 @@ return (
 
   <Button variant="primary" type="submit" className="mb-3">Send Message</Button>
 </Form>
+
+{result && (
+     <p className={`${result.success ? 'success' : 'error'}`}>
+    {result.message}
+    </p>
+)}
+
 </div>
 </div>
 );

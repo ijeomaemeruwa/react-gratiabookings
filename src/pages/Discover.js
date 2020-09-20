@@ -8,7 +8,7 @@ export class Discover extends Component {
     render() {
     return (
     <div>
-    <h3>LATEST DEALS AND PACKAGES</h3>  
+    <h3 className="mt-3 text-center">LATEST DEALS AND PACKAGES</h3>  
     
 <CardDeck className="m-5">
 <Card>
