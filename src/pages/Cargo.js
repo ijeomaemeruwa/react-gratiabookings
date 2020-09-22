@@ -19,7 +19,7 @@ return (
 
     <div className="row padding">
     <img className="col-md-6 col-sm-12 cargo-img" 
-         src={require('../assets/images/parcel.jpg')} fluid 
+         src={require('../assets/images/720.jpg')} fluid 
          alt="parcel">
     </img>
     <h4 className="col-md-6 col-sm-1">
