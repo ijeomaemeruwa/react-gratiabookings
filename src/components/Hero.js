@@ -10,9 +10,9 @@ export class Hero extends Component {
         <div className="overlay-color">
         <div className="hero-content">
         <h2>FLIGHT. HOTEL. CARGO.</h2> 
-        <p>Thinking of taking a trip?<br />
+        <p className="col-md-6 my-3">Thinking of taking a trip?<br />
         Worry not as you can get the best posible deals 
-        on flight and hotel reservations,<br />
+        on flight and hotel reservations,
         both local and international!!
         </p> 
         <Link to="/Discover" className="hero-button">DISCOVER DEALS</Link>
@@ -22,8 +22,8 @@ export class Hero extends Component {
         
         <div className="about-section">
          <h2>ABOUT US</h2>
-         <p>
-        At Gratia Bookings, we specialize in providing best rates on flight and hotel bookings <br /> across the globe and also 
+         <p className="col-md-6">
+        At Gratia Bookings, we specialize in providing best rates on flight and hotel bookings across the globe and also 
         processing cargo to your desired destination all at a comfortable price.
         </p>
         </div>

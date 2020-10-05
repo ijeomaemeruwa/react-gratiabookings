@@ -26,6 +26,10 @@ h6 {
 
 .newsletter-form {
     background: #d5d5d5;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    
 }
 
 .social-media {

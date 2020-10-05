@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import '../assets/css/footer.css';
 import { ScrollToTop } from './ScrollToTop';
-import MailchimpSubscribe from "react-mailchimp-subscribe"
+import Form from 'react-bootstrap/Form'
+import Button from 'react-bootstrap/Button'
+//import MailchimpSubscribe from "react-mailchimp-subscribe"
 
 
 export class Footer extends Component {
@@ -35,11 +37,17 @@ return (
 <p>Email: gratiabookings@gmail.com</p>
 </div>
 
-<div className="newsletter-section col-md-4 col-sm-12 mt-3 text-left">
+<Form className="newsletter-section col-md-4 col-sm-12 mt-3 text-left">
 Subscribe
-<MailchimpSubscribe url={process.env.REACT_APP_MAILCHIMP_URL} className="newsletter "/>
-<small>Get news on travel packages, latest offers and promotions.</small>
-</div>
+<Form.Group controlId="email" className="mt-2">
+    <Form.Control 
+    type="email" placeholder="Enter valid email" 
+    name="email"  
+/>
+</Form.Group>
+<small>Get news on travel packages, latest offers and promotions.</small><br />
+<Button variant="primary">Send</Button>
+</Form>
 </div>
 </footer>
 

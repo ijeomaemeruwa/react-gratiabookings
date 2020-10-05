@@ -18,11 +18,11 @@ return (
 
 
     <div className="row padding">
-    <img className="col-md-6 col-sm-12 cargo-img" 
-         src={require('../assets/images/720.jpg')} fluid 
+    <img className="col-md-6 col-sm-12 cargo-img mx-2 my-2" 
+         src={require('../../src/assets/images/delivery.jpg')} fluid 
          alt="parcel">
     </img>
-    <h4 className="col-md-6 col-sm-1">
+    <h4 className="col-md-4 col-sm-1 mx-auto">
     <strong>Local and International Delivery</strong><br />
     We offer services that include door to door delivery both locally
     and internationally.
