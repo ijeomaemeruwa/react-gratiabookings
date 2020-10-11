@@ -34,7 +34,7 @@ return (
 <div className="footer-contact col-md-4 col-sm-12 mt-2 text-left">
 <h5>Contact Us</h5>
 <p>Phone: +234 814 750 5956</p>
-<p>Email: gratiabookings@gmail.com</p>
+<p>Email: <a href="mailto:gratiabookings@gmail.com">gratiabookings@gmail.com</a></p>
 </div>
 
 <Form className="newsletter-section col-md-4 col-sm-12 mt-3 text-left">

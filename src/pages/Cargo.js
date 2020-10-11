@@ -18,8 +18,9 @@ return (
 
 
     <div className="row padding">
-    <img className="col-md-6 col-sm-12 cargo-img mx-2 my-2" 
+    <img className="col-md-6 col-sm-12 cargo-img mx-auto my-2" 
          src={require('../../src/assets/images/delivery.jpg')} fluid 
+         style={{ width: "85%" }}
          alt="parcel">
     </img>
     <h4 className="col-md-4 col-sm-1 mx-auto">
