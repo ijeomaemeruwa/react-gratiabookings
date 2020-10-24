@@ -1,0 +1,85 @@
+.cargo-header {
+    height: 500px;
+    width: 100%;
+    background: url('../../assets/images/cargo-hero.jpg')  no-repeat center/cover;
+    position: relative;
+}
+
+.cargo-header-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    max-width: 100%;
+    padding: 5rem 1rem; 
+    line-height: 2em;
+    color: #fefffe;    
+}
+
+.cargo-header-content h2 {
+    font-size: 3rem;
+    letter-spacing: 1px;
+}
+
+span {
+    color: var(--primary-color);
+}
+
+.cargo-services strong {
+    color: var(--primary-color);
+}
+
+.cargo-services h4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+.cargo_info {
+    padding: 3rem;
+}
+
+.delivery_img {
+    width: 100%;  
+  }
+  
+.delivery_img img {
+      width: 500px;
+}
+
+.cargo_contact {
+    padding: 3rem;
+}
+
+
+@media screen and (max-width: 480px) {
+    .cargo-header-content h2 {
+       font-size: 2.5rem;
+    }
+    
+    h3 {
+        font-size: 1.5rem; 
+    }
+    
+    h4 {
+        font-size: 1rem;
+    }
+
+}
+
+/*@media screen and (max-width: 700px) {
+    .cargo-services .cargo-img {
+        max-width: 100%;
+        margin: auto;
+        align-items: center;
+    }
+}
+*/

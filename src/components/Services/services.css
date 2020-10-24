@@ -1,0 +1,11 @@
+.services-cards {
+    padding: 30px;
+}
+
+.cards {
+    box-shadow: 0 0 10px rgba(169, 169, 169, 0.1);
+}
+
+small {
+    color: #696969;
+}
