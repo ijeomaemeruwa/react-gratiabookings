@@ -20,17 +20,17 @@ const { preview } = this.state
 
 return (
 <div>
-   <div className="discover">
+   <header className="discover">
    <div className="overlay-color">
     <div className="discover_content col-md-6">
     <h1>DISCOVER</h1>
     <p>Affordable deals and promotions for individual or family vacation</p>
     </div>
     </div>
-   </div>
+   </header>
     
    <div className="cards">
-   <CardDeck className="m-5">
+   <CardDeck className="mx-auto card_decks">
     {
         preview.map(({id, ...otherPreviewData }) => (
         <DiscoverPreview 
