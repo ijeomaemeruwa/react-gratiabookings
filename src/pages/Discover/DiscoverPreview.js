@@ -1,10 +1,9 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card';
 
-
 export const DiscoverPreview = ({city, imageURL, price, travelPackage }) => {
     return (
-    <div>
+    <>
      <Card className="mb-5">
      <Card.Img variant="top" src={imageURL} />
      <Card.Body>
@@ -14,7 +13,7 @@ export const DiscoverPreview = ({city, imageURL, price, travelPackage }) => {
      <p>{travelPackage}</p>
     </Card.Text> 
     </Card.Body>    
-    </Card>       
-    </div>
+    </Card>   
+    </>
     )
 }
