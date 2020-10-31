@@ -1,6 +1,6 @@
 .partners_section {
     background: var(--text-color);
-    height: 350px;
+    height: 450px;
     color: #fefffe;
 }
 
@@ -41,16 +41,19 @@
 }
 
 .brands {
-    padding: 2rem;
+    padding: 1rem;
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
     margin: auto;
 }
+.brand_img {
+    width: 100%;
+}
 
 .brands img {
-    width: 200px;
+    width: 80%;
 }
 
 @media screen and (max-width: 480px) {
@@ -58,11 +61,21 @@
         height: 100%;
     }
 
+    .form h5 {
+        font-size: 1.2rem;
+    }
+
     .form input, .form .newsletter_btn {
         padding: 5px;
+        width: 100%;
+    }
+
+    .form .newsletter_btn {
+        letter-spacing: 0;
+        
     }
 
     .brands img {
-        width: 100%;
+        width: 50%;
     } 
 }

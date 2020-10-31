@@ -6,6 +6,11 @@
     box-shadow: 0 0 10px rgba(169, 169, 169, 0.1);
 }
 
-small {
+.cards .services_icon {
+    font-size: 2rem;
+}
+
+.cards p {
     color: #696969;
+    padding: 1rem;
 }

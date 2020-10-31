@@ -1,6 +1,8 @@
 import React from 'react'
 import '../Partners/partners.css'
 
+// https://www.konga.com/_next/static/images/62f8a0d88e07573b4d46735aa24f3f04.png
+
 export const Partners = () => {
     return (
     <div>
@@ -20,10 +22,12 @@ export const Partners = () => {
 
     <h5 className="text-center">In Partnership with:</h5>
     <div className="brands row m-auto"> 
-    <div className="col-md-4">
-    <img src="https://www.konga.com/_next/static/images/62f8a0d88e07573b4d46735aa24f3f04.png" alt="konga" />
+    <div className="col-md-4 brand_img">
+    <img src={require('../../assets/images/konga.svg')} 
+    className="img img-responsive" 
+    alt="konga" />
     </div>
-    <div className="col-md-4">
+    <div className="col-md-4 brand_img">
     <img lazy-img="https://wakanow-images.azureedge.net/Images/logo.png" 
     src="https://wakanow-images.azureedge.net/Images/logo.png" className="img img-responsive" 
     alt="Wakanow Logo"></img>

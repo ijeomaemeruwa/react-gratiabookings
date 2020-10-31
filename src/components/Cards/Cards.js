@@ -8,7 +8,7 @@ import '../Cards/card.css'
 export class Cards extends Component {
     render() {
     return (
-<div>
+<>
 <div class="padding text-center mt-5 mb-3">
     <h2>FEATURED DEALS</h2>
 </div>
@@ -65,7 +65,7 @@ export class Cards extends Component {
 <br />
 <br />
 
-</div>
+</>
 )
 }
 }

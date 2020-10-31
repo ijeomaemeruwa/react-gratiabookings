@@ -3,13 +3,13 @@ import React, { Component } from 'react';
 import { Home } from '../../pages/Home';
 import { Discover } from '../../pages/Discover/Discover';
 import { Cargo } from '../../pages/Cargo/Cargo';
-import { Contact } from '../Contact/Contact';
 import '../Navigation/navigation.css'
 
 import { Navbar, Nav } from 'react-bootstrap';
 import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
 import NavbarToggle from 'react-bootstrap/esm/NavbarToggle'
 import Button from 'react-bootstrap/Button'
+import { Link } from 'react-scroll'
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 
@@ -31,18 +31,19 @@ export class Navigation extends Component {
                <Nav.Link href="/">Home</Nav.Link>
                <Nav.Link href="/discover">Discover</Nav.Link>
                <Nav.Link href="/cargo">Cargo</Nav.Link>
-               <Nav.Link href="/contact">
-                 <Button>Contact Us</Button>
-                </Nav.Link>
+               <Link to="contact"
+               spy={true} smooth={true} offset={-80} duration={500} 
+               >
+                <Button>Contact Us</Button>
+                </Link>
            </Nav>
         </NavbarCollapse>
         </Navbar>
 
         <Switch>
         <Route exact path="/"><Home /></Route>
-        <Route exact path="/discover"><Discover /></Route>
-        <Route exact path="/cargo"><Cargo /></Route>
-        <Route exact path="/Contact" component={Contact} />
+        <Route path="/discover" component={Discover} />
+        <Route path="/cargo" component={Cargo} />
         </Switch>
         </Router>
       </div>

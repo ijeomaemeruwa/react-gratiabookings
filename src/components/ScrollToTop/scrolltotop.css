@@ -1,0 +1,25 @@
+.scroll {
+    position: fixed;
+    cursor: pointer;
+    bottom: 12px;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    background: var(--primary-color);
+    color: #fff;
+    z-index: 1;
+}
+
+.icon {
+    margin-top: 10px;
+    animation: scrollToTheTop 0.5s alternate ease infinite; 
+}
+
+@keyframes scrollToTheTop {
+    from {
+        transform: translateY(2px);
+    }
+    to {
+        transform: translateY(-1px);
+    }
+}

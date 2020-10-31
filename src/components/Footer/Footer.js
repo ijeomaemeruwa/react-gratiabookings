@@ -1,22 +1,20 @@
 import React, { Component } from 'react';
 import '../Footer/footer.css';
-//import Form from 'react-bootstrap/Form'
-//import Button from 'react-bootstrap/Button'
-//import MailchimpSubscribe from "react-mailchimp-subscribe"
+import { Link } from 'react-router-dom'
 
 
 export class Footer extends Component {
 render() {
 return (
-<div>
+<>
   <footer className="footer">
   <div className="footer_content row mx-auto">
 
   <div className="quick_links col-md-4">
   <h4>QUICK LINKS</h4>
   <ul>
-    <li>Discover</li>
-    <li>Cargo</li>
+    <li><Link to="/discover" className="links">Discover</Link></li>
+    <li><Link to="/cargo" className="links">Cargo</Link></li>
     <li>Promotions</li>
   </ul>
   </div>
@@ -25,7 +23,7 @@ return (
     <h4>CONTACT</h4>
     <ul>
     <li>Phone: +234 814 750 5956</li>
-    <li>Email: <a href="mailto:gratiabookings@gmail.com">gratiabookings@gmail.com</a></li>
+    <li>Email: <Link href="mailto:gratiabookings@gmail.com">gratiabookings@gmail.com</Link></li>
     <li>Partnership</li>
     </ul>
   </div>
@@ -48,7 +46,7 @@ return (
 </div>
 
 </div>
-</div>
+</>
 )
 }
 }

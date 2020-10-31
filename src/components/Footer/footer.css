@@ -1,7 +1,7 @@
 .footer {
     background: #141618;
     color: #f3f6f8;
-    height: 300px;
+    height: 100%;
 }
 
 .footer_content {
@@ -9,7 +9,7 @@
 }
 
 .footer_content h4 {
-    color: #d5d5d5;
+    color: var(--accent-color);
     font-weight: bold;
     cursor: pointer;
 }
@@ -22,6 +22,11 @@ li {
     list-style: none;
     cursor: pointer;
     padding: 0.5rem 0;
+}
+
+.quick_links .links {
+    text-decoration: none !important;
+    color: #f3f6f8 !important;
 }
     
 

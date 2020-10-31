@@ -5,12 +5,12 @@ import '../Hero/hero.css';
 export class Hero extends Component {
     render() {
         return (
-        <div>
+        <>
         <div className="hero-section">
         <div className="overlay-color">
         <div className="hero-content">
         <h1>BOOKINGS AND DELIVERY MADE EASY</h1> 
-        <p className="col-md-6 my-3">
+        <p className="col-md-6 p-3">
         Discover affordable flight and hotel deals for your next vacation and 
         use us for your cargo and parcel delivery both locally and internationally.  
         </p> 
@@ -37,7 +37,7 @@ export class Hero extends Component {
         </div>
         </div>
         <hr style={{ width: "70%", margin: "auto" }}/>
-        </div>
+        </>
         )
     }
 }
