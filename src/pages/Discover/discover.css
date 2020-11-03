@@ -26,9 +26,3 @@
     }
 }
 
-@media screen and (max-width: 800px) {
-    .card_decks {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
