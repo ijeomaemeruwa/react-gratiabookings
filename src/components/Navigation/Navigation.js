@@ -3,13 +3,14 @@ import React, { Component } from 'react';
 import { Home } from '../../pages/Home';
 import { Discover } from '../../pages/Discover/Discover';
 import { Cargo } from '../../pages/Cargo/Cargo';
+import Contact from '../../components/Contact/Contact'
 import '../Navigation/navigation.css'
 
 import { Navbar, Nav } from 'react-bootstrap';
 import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
 import NavbarToggle from 'react-bootstrap/esm/NavbarToggle'
 import Button from 'react-bootstrap/Button'
-import { Link } from 'react-scroll'
+// import { Link } from 'react-scroll'
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 
@@ -31,19 +32,13 @@ export class Navigation extends Component {
                <Nav.Link href="/">Home</Nav.Link>
                <Nav.Link href="/discover">Discover</Nav.Link>
                <Nav.Link href="/cargo">Cargo</Nav.Link>
+               <Nav.Link href="/contact">
+               <Button>
+                Contact Us
+               </Button>
+               </Nav.Link>
            </Nav>
-           <Button>
-           <Link 
-               to="contact"
-               activeClass="active"
-               spy={true}
-               smooth={true}
-               offset={-80}
-               duration={500} 
-               >
-              Contact Us
-            </Link>
-            </Button>
+           
         </NavbarCollapse>
         </Navbar>
 
@@ -51,6 +46,7 @@ export class Navigation extends Component {
         <Route exact path="/"><Home /></Route>
         <Route path="/discover" component={Discover} />
         <Route path="/cargo" component={Cargo} />
+        <Route path="/contact" component={Contact} />
         </Switch>
         </Router>
       </div>
