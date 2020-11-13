@@ -31,12 +31,19 @@ export class Navigation extends Component {
                <Nav.Link href="/">Home</Nav.Link>
                <Nav.Link href="/discover">Discover</Nav.Link>
                <Nav.Link href="/cargo">Cargo</Nav.Link>
-               <Link to="contact"
-               spy={true} smooth={true} offset={-80} duration={500} 
-               >
-                <Button>Contact Us</Button>
-                </Link>
            </Nav>
+           <Button>
+           <Link 
+               to="contact"
+               activeClass="active"
+               spy={true}
+               smooth={true}
+               offset={-80}
+               duration={500} 
+               >
+              Contact Us
+            </Link>
+            </Button>
         </NavbarCollapse>
         </Navbar>
 
